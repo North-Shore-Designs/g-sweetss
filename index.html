@@ -7,7 +7,7 @@
 <meta name="description" content="G Sweetss — 100% handmade Greek &amp; Mediterranean cakes and pastries in Peabody, MA. Custom celebration cakes, baklava, spanakopita & more. 4.9★ on Yelp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Pinyon+Script&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 /* Brand colors: G Sweetss red (awning) + baby blue (logo), on deep navy */
 :root{
@@ -215,7 +215,11 @@ footer{background:var(--plum);color:#dcecf9;padding:3.2rem 0 1.6rem}
 .foot-grid h4{color:#fff;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.8rem;font-weight:800}
 .foot-grid p,.foot-grid a{color:#b9cfe6;font-size:.9rem;display:block;margin-bottom:.4rem;cursor:pointer}
 .foot-grid a:hover{color:#fff}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.3rem;text-align:center;font-size:.8rem;color:#8aa4c4}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.3rem;font-size:.8rem;color:#8aa4c4;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.foot-bottom p{color:#8aa4c4;font-size:.8rem;font-family:'Josefin Sans',sans-serif;letter-spacing:.05em;margin:0}
+.foot-bottom .footer-credit a{color:#e8c98a;text-decoration:none;display:inline;margin:0;font-size:inherit;cursor:pointer}
+.foot-bottom .footer-credit a:hover{text-decoration:underline}
+@media(max-width:640px){.foot-bottom{justify-content:center;text-align:center}}
 
 /* chatbot */
 .chat-fab{position:fixed;bottom:1.4rem;right:1.4rem;z-index:90;width:58px;height:58px;border-radius:18px 18px 4px 18px;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:1.5rem;box-shadow:0 14px 30px -10px var(--accent);transition:transform .2s}
@@ -434,7 +438,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
       <div><h4>Explore</h4><a onclick="go('home')">Home</a><a onclick="go('cakes')">Cakes &amp; Gallery</a><a onclick="go('menu')">Menu</a><a onclick="go('about')">Our Story</a><a onclick="go('visit')">Visit</a></div>
       <div><h4>Find Us</h4><a href="https://maps.google.com/?q=G+Sweetss+139+Lynnfield+St+Peabody+MA" target="_blank">139 Lynnfield St, Peabody</a><a href="https://www.instagram.com/gsweetss/" target="_blank">Instagram</a><a href="https://www.facebook.com/p/G-Sweetss-100063486736171/" target="_blank">Facebook</a><a href="https://www.yelp.com/biz/g-sweetss-peabody-2" target="_blank">Yelp · 4.9★</a></div>
     </div>
-    <div class="foot-bottom">© <span id="yr"></span> G Sweetss · Peabody, Massachusetts · Made by hand</div>
+    <div class="foot-bottom"><p>© <span id="yr"></span> G Sweetss · Peabody, Massachusetts · Made by hand</p><p class="footer-credit">Made in MA by <a href="https://northshoredesigns.com" target="_blank" rel="noopener noreferrer">North Shore Designs</a></p></div>
   </div>
 </footer>
 
