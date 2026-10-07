@@ -54,7 +54,8 @@ img{display:block;max-width:100%}
 /* ===== nav ===== */
 nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
-.brand{display:flex;align-items:baseline;gap:.5rem;cursor:pointer}
+.brand{display:flex;align-items:center;gap:.6rem;cursor:pointer}
+.brand-logo{height:40px;width:auto;display:block}
 .brand .gn{font-family:'Gloock';font-weight:800;font-size:1.6rem;letter-spacing:-.02em;color:var(--nav-ink)}
 .brand .gs{font-family:'Pinyon Script';font-size:1.15rem;color:var(--accent)}
 .nav-links{display:flex;align-items:center;gap:.1rem}
@@ -290,7 +291,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 <nav>
   <div class="wrap nav-inner">
-    <div class="brand" onclick="go('home')"><span class="gn">G Sweetss</span></div>
+    <div class="brand" onclick="go('home')"><img class="brand-logo" src="logo.png" alt="" width="70" height="40"><span class="gn">G Sweetss</span></div>
     <div class="nav-links" id="navLinks">
       <button class="link active" onclick="go('home')">Home</button>
       <button class="link" onclick="go('cakes')">Cakes &amp; Gallery</button>
