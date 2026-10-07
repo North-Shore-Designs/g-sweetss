@@ -147,7 +147,7 @@ section{padding:5rem 0}
 .menu-block h3 .script{font-size:1.1rem;color:var(--gold)}
 .mrow{display:flex;align-items:baseline;gap:.5rem;cursor:pointer;padding:.5rem 0;border-bottom:1px dotted transparent;transition:color .2s}
 .mrow:hover{color:var(--accent)}
-.mrow .nm{font-weight:700;white-space:nowrap}
+.mrow .nm{font-weight:700;overflow-wrap:anywhere}
 .mrow .more{color:var(--accent);font-size:1.3rem;line-height:1;opacity:.6;transition:opacity .2s,transform .2s}
 .mrow:hover .more{opacity:1;transform:translateX(3px)}
 .mrow .ds{display:block;font-size:.82rem;color:var(--text-soft);font-weight:400;margin-top:.1rem;line-height:1.4}
@@ -248,11 +248,12 @@ footer{background:var(--plum);color:#dcecf9;padding:3.2rem 0 1.6rem}
   .visit-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){
-  .nav-links{position:fixed;inset:0 0 0 auto;width:min(280px,80vw);background:var(--surface);flex-direction:column;align-items:stretch;padding:5rem 1.2rem 2rem;transform:translateX(110%);transition:transform .3s;box-shadow:var(--shadow);gap:.3rem}
-  .nav-links.open{transform:none}.nav-links .link{text-align:left;font-size:1.05rem;padding:.8rem 1rem}
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;padding:.6rem 1rem 1rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow);gap:.2rem;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .2s,transform .2s,visibility .2s}
+  .nav-links.open{opacity:1;visibility:visible;transform:none}.nav-links .link{text-align:left;font-size:1.05rem;padding:.8rem 1rem}
   .nav-links .link.active::after{display:none}
   .hamburger{display:block}.nav-cta-desktop,.yelp-chip{display:none}
-  .menu-cols{columns:1}.gallery{columns:1}.foot-grid{grid-template-columns:1fr}
+  .menu-cols{columns:1}.gallery{columns:1}.foot-grid{grid-template-columns:1fr}.owners{grid-template-columns:1fr}
+  .modal{padding:1.6rem}.m-head img{width:76px;height:76px}.modal h3{font-size:1.45rem}
   section{padding:3.4rem 0}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
